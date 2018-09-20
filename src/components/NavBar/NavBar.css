@@ -3,7 +3,7 @@
   position: fixed;
   width: 100%;
   color: #fff;
-  font-size: calc(10px + 14 * (100vw - 320px) / 800);
+  font-size: calc(10px + 10 * (100vw - 320px) / 800);
   display: block;
 }
 

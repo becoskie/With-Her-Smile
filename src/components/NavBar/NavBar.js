@@ -1,19 +1,15 @@
 //sets up the reusable Navbar component
-import React, { Component } from "react";
+import React from "react";
 import "./NavBar.css";
 
-class Navbar extends Component {
-  render() {
-    return (
+const NavBar = props => (
         <nav className="navbar">
           <ul>
-          <li>Help Mary Make It!</li>
-            <li>Your Guess</li>
-            <li>Score: 0 | Top Score: 12</li>
+          <li>Keep Mary Fresh!</li>
+            <li>{props.message}</li>
+            <li>Days Fresh: {props.score} | Record Fresh Days: {props.highScore}</li>
           </ul>
       </nav>
-    );
-  }
-}
 
-export default Navbar;
+)
+export default NavBar;
