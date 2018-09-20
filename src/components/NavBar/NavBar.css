@@ -1,0 +1,14 @@
+.navbar {
+  background:powderblue;
+  position: fixed;
+  width: 100%;
+  color: #fff;
+  font-size: calc(10px + 14 * (100vw - 320px) / 800);
+  display: block;
+}
+
+.navbar li {
+    display: inline-block;
+    width: 33.3%;
+    text-align: center;
+}
