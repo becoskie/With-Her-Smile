@@ -2,7 +2,7 @@
   background:powderblue;
   position: fixed;
   width: 100%;
-  color: #fff;
+  color: #f78fb3;
   font-size: calc(10px + 10 * (100vw - 320px) / 800);
   display: block;
 }

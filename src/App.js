@@ -5,6 +5,7 @@ import MaryCard from "./components/MaryCard";
 import mary from "./mary.json"
 import "./App.css";
 
+
 class App extends Component {
   state = {
     mary,
@@ -19,16 +20,20 @@ class App extends Component {
     const MaryAlreadyClicked = this.state.maryClicked.indexOf(currentMary) > -1;
 
     if (MaryAlreadyClicked) {
+      if(this.state.score > this.state.highScore) {
+        this.setState( {highScore: this.state.score} )
+      }
       this.setState({
-        mary: this.state.mary.sort(function(a, b) {
-          return 0.5 - Math.random();
-        }),
         maryClicked: [],
         score: 0,
         message: "You made Mary Skunky."
       });
 
     } else {
+      if(this.state.score >= this.state.highScore) {
+        this.setState( {highScore: this.state.score + 1} )
+      }
+
       this.setState(
         {
           mary: this.state.mary.sort(function(a, b) {
@@ -38,18 +43,17 @@ class App extends Component {
             currentMary
           ),
           score: this.state.score + 1,
-          highScore: this.state.highScore + 1,
-          message: "Joy! Mary's nice and Fresh"
+          message: "Good job! Mary's still Fresh",
         },
         () => {
           if (this.state.score === 12) {
-            alert("Yay! You Win!");
             this.setState({
               mary: this.state.mary.sort(function(a, b) {
                 return 0.5 - Math.random();
               }),
               maryClicked: [],
-              score: 0
+              score: 0,
+              message: "You Kept Mary fresh for 12 days!"
             });
           }
         }
