@@ -1,6 +1,7 @@
 .navbar {
   background:powderblue;
   position: fixed;
+  top: 0px;
   width: 100%;
   color: #f78fb3;
   font-size: calc(10px + 10 * (100vw - 320px) / 800);
