@@ -43,7 +43,7 @@ class PageContain extends Component {
             currentMary
           ),
           score: this.state.score + 1,
-          message: "Good job! Keeping Mary Fresh",
+          message: "Good Job Keeping Mary Fresh !!",
         },
         () => {
           if (this.state.score === 12) {

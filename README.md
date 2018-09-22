@@ -1,5 +1,5 @@
 # Keeping Mary Fresh
-Mary Tyler Moore memory Challange React app
+Mary Tyler Moore Memory Challenge React app
 
 ![](https://media.giphy.com/media/l2SqcwNNskUYX1hLO/giphy.gif)
 
@@ -12,7 +12,7 @@ A single native Minnesotan, moves to Minneapolis in 1970 at age 30 and becomes A
 
 ![](https://thumbs.gfycat.com/LawfulAmusingBass-size_restricted.gif)
 
-Go to the homepage you are presented with the 12 outfits that a single working girl in the 70's can afford. The goal is to keep her in a fresh outfit for twelve days. With our help, she'll make it after all.
+On the homepage you are presented with the 12 outfits that a single working girl in the 70's can afford. The goal is to keep her in a fresh outfit for twelve days. With our help, she'll make it after all.
 
 ## Features
 - Conditional Rendering
