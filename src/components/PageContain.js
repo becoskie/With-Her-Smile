@@ -1,7 +1,6 @@
 import React, { Component } from "react";
 import Home from "./pages/Home";
 import Mary from "./pages/Mary";
-import Over from "./pages/Over";
 import mary from "../mary.json"
 import MaryCard from "./MaryCard";
 import ScoreBar from "../components/ScoreBar";
@@ -27,7 +26,7 @@ class PageContain extends Component {
       this.setState({
         maryClicked: [],
         score: 0,
-        message: "You made Mary Skunky."
+        message: "You made Mary smell like yesterday!",
       });
 
     } else {
@@ -44,7 +43,7 @@ class PageContain extends Component {
             currentMary
           ),
           score: this.state.score + 1,
-          message: "Good job! Mary's still Fresh",
+          message: "Good job! Keeping Mary Fresh",
         },
         () => {
           if (this.state.score === 12) {
@@ -92,9 +91,6 @@ class PageContain extends Component {
         />
       ))} 
       </Mary>;
-      
-    } else if (this.state.currentPage === "Over") {
-      return <Over />;
     } 
   };
 

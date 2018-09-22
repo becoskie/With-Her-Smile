@@ -3,14 +3,13 @@ import React from "react";
 import "./ScoreBar.css";
 
 const ScoreBar = props => (
-  <nav className="navbar">
+  <div className="scoreBar">
     <ul>
-      <li>Keep Mary Fresh!</li>
-      <li>{props.message}</li>
+      <li className="message">{props.message}</li>
       <li>
         Days Fresh: {props.score} | Record Fresh Days: {props.highScore}
       </li>
     </ul>
-  </nav>
+  </div>
 );
 export default ScoreBar;

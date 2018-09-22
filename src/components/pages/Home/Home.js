@@ -8,8 +8,12 @@ const Home = props => (
     <div className="col-md-4">
     <h2>Keeping Mary Fresh</h2>
     <p>
-      If She's going to "make it", we need to keep our girl popping fresh.<br/>
-      She has 12 outfits, so keep her in a new one for 12 days straight to keep her <br/><span id="fab">FABULOUS!</span>
+      If She's going to "make it", we need to keep our girl fancy fresh.</p>
+      <p>
+      She has 12 outfits.
+    </p>
+    <p>
+    So keep her in a new one for 12 days straight to keep her <br/><span id="fab">FABULOUS!</span>
     </p>
     <button
       type="button"

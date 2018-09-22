@@ -16,10 +16,11 @@
 
 #home p {
     font-size:1.25em;
+    color: purple;
 }
 
 #fab {
-    color: pink;
+    color: #f78fb3;
     text-shadow: 2px 2px green;
     font-size: 2em;
 }
